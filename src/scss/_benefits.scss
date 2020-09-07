@@ -1,0 +1,33 @@
+.benefits {
+    .sub__title {
+        padding-top: 60px;
+        width: 50%;
+        color: $yellow;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        
+        // &__item {
+
+        //     &:not(:last-child){
+        //         list-style-image: url(../img/tick.png);
+        //     }
+        //     list-style: none;
+        //     flex: 0 0 33%;
+        // }
+
+        &__item {
+            &:not(:last-child){
+                background: url(../img/tick.png) no-repeat;
+                margin-bottom: 30px;
+                padding-bottom: 5px;
+            }
+
+            background-size: contain;
+            flex: 1 0 25%;
+            padding-left: 50px;
+        }
+    }
+}

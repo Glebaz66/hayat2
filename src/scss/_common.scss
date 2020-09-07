@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'TT Norms Pro';
+}
+
+.container {
+    max-width: 1250px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.custom-btn {
+    background-color: $yellow;
+    color: $white;
+    padding: 15px 85px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    border-radius: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    a{
+        color: $white;
+    }
+}
+
+.section__title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 71px;
+    letter-spacing: 0.05em;
+    color: $light;
+    text-transform: uppercase;
+}
+
+.sub__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    color: $grey;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+}
+
+
+.opened {
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.25)!important;
+    width: 100%;
+    height: 100%;
+}
+
+.position-unset {
+    position: unset;
+} 
