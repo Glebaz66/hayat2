@@ -3,31 +3,28 @@
         padding-top: 60px;
         width: 50%;
         color: $yellow;
+        margin-bottom: 70px;
     }
 
     &__list {
         display: flex;
         flex-flow: row wrap;
-        
-        // &__item {
-
-        //     &:not(:last-child){
-        //         list-style-image: url(../img/tick.png);
-        //     }
-        //     list-style: none;
-        //     flex: 0 0 33%;
-        // }
 
         &__item {
-            &:not(:last-child){
-                background: url(../img/tick.png) no-repeat;
-                margin-bottom: 30px;
-                padding-bottom: 5px;
-            }
-
-            background-size: contain;
+            display: flex;
+            align-items: center;
             flex: 1 0 25%;
             padding-left: 50px;
+            min-height: 40px;
+            line-height: 40px;
+            margin-bottom: 30px;
+
+            &:not(:last-child){
+                background: url(../img/tick.png) left top no-repeat;
+                background-size: contain;
+                
+            }
+
         }
     }
 }
