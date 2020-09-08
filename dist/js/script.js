@@ -99,6 +99,4 @@ $(document).ready(function(){
             $('.navbar-collapse').removeClass('show');
         }
     })
-
-    console.log('asd');
 });

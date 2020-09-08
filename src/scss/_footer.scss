@@ -56,8 +56,11 @@
     
             .wrap {
                 display: flex;
-    
+                align-items: center;
+                
                 .footer__social {
+                    margin-right: 10px;
+                    
                     a {
                         margin-right: 5px;
                     }

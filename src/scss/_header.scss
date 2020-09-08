@@ -45,6 +45,10 @@
             display: flex;
             padding-right: 30px;
 
+            .logo{
+                margin-right: 30px;
+            }
+
             .toggler {
                 display: none;
                 visibility: hidden;
@@ -60,7 +64,6 @@
                 list-style: none;
 
                 li {
-
                     a{
                         color: $grey;
                         font-weight: 500;
