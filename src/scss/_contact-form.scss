@@ -1,3 +1,119 @@
-.contact-form {
-   
+.contact__form {
+    position: relative;
+    margin-bottom: 100px;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background:  url(../img/bg-form.png) center right no-repeat, $light;
+        background-size: contain;
+        box-shadow: -20px 20px 40px rgba(0, 0, 0, 0.05);
+        z-index: -1;
+    }
+    
+    &__wrap {
+       display: flex;
+       justify-content: space-between;
+
+       .contact__form__video {
+            flex: 0 0 40%;
+            
+            .sub__title {
+                margin-bottom: 50px;
+            }
+
+            .video {
+                position: relative;
+                width: 100%;
+                height: 70%;
+
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 80%;
+                }
+            }
+
+            .show__more {
+                width: 133px;
+                margin: 0 0 0 auto;
+
+                a {
+                    color: #ddb04e;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 20px;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        background: url(../img/right-arrow.png) no-repeat;
+                        position: absolute;
+                        top: 0;
+                        right: -50px;
+                        z-index: 2;
+                    }
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        width: 40px;
+                        height: 46px;
+                        background: #f9f9f9;
+                        position: absolute;
+                        top: -3px;
+                        right: -60px;
+                        z-index: 1;
+                    }
+                }
+            }
+       }
+
+       .form {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 65%;
+            padding: 50px;
+            
+            .sub__title {
+                margin-bottom: 50px;
+            }
+
+            form {
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                width: 80%;
+                
+                input {
+                    height: 60px;
+                    min-width: 300px;
+                    width: 60%;
+                    padding: 0;
+                    border: none;
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: 'TT Norms Pro';
+
+                    &:not(:last-child){
+                        color: #969599;
+                        margin-bottom: 20px;
+                        width: 80%;
+                        padding-left: 20px;
+                        font-weight: 600;
+                    }
+                }
+            }
+       }
+   }
 }

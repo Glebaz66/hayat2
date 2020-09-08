@@ -1,3 +1,220 @@
 .portfolio {
-   
+    margin-bottom: 100px;
+
+    .slick-track,
+    .slick-list,
+    .slick-slide {
+        &:active,
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        flex-flow: row wrap;
+        position: relative;
+        padding: 50px 0 0 15px;
+
+        .border-wrap {
+            position: absolute;
+            top: 0;
+            left: -50px;
+            width: 90%;
+            height: 100%;
+            border: 1px solid $light;
+            z-index: -1;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+
+            .portfolio__description {
+                flex: 0 0 40%;
+
+                .text {
+                    font-size: 14px;
+                }
+            }
+    
+            .portfolio__image {
+                flex: 0 0 50%;
+                margin-top: -65px;
+                background: $white;
+                text-align: right;
+
+                .section__title {
+                    padding-left: 30px;
+                    font-size: 45px;
+                    margin-bottom: 30px;
+                }
+
+                &__img {
+                    position: relative;
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+
+                .portfolio__info {
+                    text-align: left;
+                    flex: 0 0 50%;
+                    position: absolute;
+                    top: 300px;
+                    right: 300px;
+                    max-width: 300px;
+                    padding: 25px 40px;
+                    background: $grey;
+                    color: $white;
+                    z-index: 1;
+
+                    &__title {
+                        background: $yellow;
+                        font-weight: 700;
+                        font-size: 30px;
+                        line-height: 35px;
+                        padding: 5px 80px;
+                        margin-left: -80px;
+                        margin-bottom: 20px;
+                    }
+
+                    &__price {
+                        color: $white;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 35px;
+                        margin-bottom: 10px;
+                        
+                        span {
+                            font-size: 30px;
+                        }
+                    }
+
+                    &__sub-txt {
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-bottom: 15px;
+                    }
+
+                    &__description {
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+
+                &__ctrl {
+                    position: absolute;
+                    bottom: 100px;
+                    right: 135px;
+                    width: 120px;
+                    height: 240px;
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: space-between;
+                    
+                    .counter {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        align-items: center;
+                        justify-content: flex-end;
+                        margin-right: 30px;
+                        padding: 10px 0;
+                        background: $white;
+
+                        .arrow {
+                            background: url(../img/right-arrow.png) no-repeat;
+                            background-size: 100% !important;
+                            width: 15px;
+                            height: 15px;
+                            margin-left: 15px;
+                        }
+
+                        .arrow__left {
+                            transform: rotate(180deg);
+                            margin-right: 15px;
+                        }
+
+                        .current {
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 21px;
+                            letter-spacing: 0.05em;
+                            color: $yellow;
+                        }
+
+                        .slash,
+                        .total {
+                            font-weight: 300;
+                            font-size: 12px;
+                            line-height: 14px;
+                            letter-spacing: 0.05em;
+                            color: $grey;
+                        }
+                    }
+
+                    .next {
+                        background: $white;
+                        padding: 10px 0;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.05em;
+                        color: $yellow;
+                        font-weight: 700;
+                        position: relative;
+
+                        &:before {
+                            content: '';
+                            display: block;
+                            width: 40px;
+                            height: 40px;
+                            background: url(../img/right-arrow.png) no-repeat;
+                            position: absolute;
+                            top: 15px;
+                            right: -50px;
+                            z-index: 2;
+                        }
+
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 40px;
+                            height: 46px;
+                            background: #f9f9f9;
+                            position: absolute;
+                            top: 12px;
+                            right: -60px;
+                            z-index: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .portfolio__rate {
+            flex: 0 0 40%;
+
+            .sub__title {
+                margin-bottom: 20px;
+            }
+
+            &__list {
+                &__item {
+                    list-style-image: url(../img/list-img-grey.png);
+                    font-size: 16px;
+                    padding-left: 15px;
+                    margin-bottom: 15px;
+
+                    span {
+                        font-weight: 700;
+                        display: block;
+                    }
+                }
+            }
+        }
+   }
 }

@@ -88,7 +88,29 @@
         padding-top: 30px;
     }
 
-    @media screen and(min-width:320px) and (max-width:991px){
+    @media screen and(min-width:769px) and (max-width:1199px){
+        padding: 0 20px;
+
+        &__logo {
+            margin-right: 10px;
+        }
+
+        &__contacts {
+            flex: 0 0 46%;
+
+            .footer__email {
+                margin-right: 0;
+            }
+
+            .wrap {
+                .footer__copyright {
+                    padding-top: 15px;
+                }
+            }
+        }
+    }
+
+    @media screen and(min-width:320px) and (max-width:768px){
         padding: 20px 0;
         flex-flow: column;
        

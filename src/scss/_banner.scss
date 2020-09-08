@@ -19,7 +19,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 35%;
+            width: 36%;
             height: 100%;
     
             img {
@@ -30,7 +30,7 @@
         }
 
         .banner__body {
-            width: 65%;
+            width: 64%;
             margin-left: auto;
             margin-right: -40px;
 
@@ -69,54 +69,53 @@
                 font-weight: bold;
                 font-size: 22px;
                 line-height: 28px;
+                letter-spacing: 0.05em;
             }
-
         }
     }
     
-    @media screen and (min-width:320px) and (max-width: 991px){
+    @media screen and (min-width:769px) and (max-width: 1199px){
+        
+    }
+
+    @media screen and (min-width:320px) and (max-width: 768px){
         margin-bottom: 0;
 
-        &-img {
-            position: unset;
-            width: 100%;
-        }
-
-        .sub-title {
-            font-size: 25px;
+        .container {
+            padding-left: 0;
+            padding-right: 0;
         }
 
         &__inner {
-            padding: 15px 15px 25px;
-            background: #3e4b64;
+            padding: 0;
+            background: $grey;
 
-            .banner__bg {
-                display: none;
-                visibility: hidden;
+            .banner__img {
+                position: unset;
+                width: 100%;
             }
-            .sub-title {
-                padding: 0;
-                margin-bottom: 15px;
-            }
+            
+            .banner__body {
+                width: 100%;
+                margin: 0;
+                padding: 30px 0;
 
-            .banner__list {
-                padding: 0 0 0 20px;
+                .sub-title {
+                    font-size: 25px;
+                }
 
-                ul {
-                    padding: 0;
-
-                    li{
-                        line-height: 20px;
-                        font-size: 14px;
+                .banner__list {
+                    ul {
+                        li {
+                            font-size: 14px;
+                        }
                     }
                 }
-            }
 
-            .banner__text {
-                padding: 0;
-                font-size: 16px;
-                line-height: 20px;
-                font-weight: 500;
+                .banner__text {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
             }
         }
     }

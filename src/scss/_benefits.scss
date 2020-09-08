@@ -9,22 +9,38 @@
     &__list {
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-between;
 
         &__item {
             display: flex;
             align-items: center;
-            flex: 1 0 25%;
-            padding-left: 50px;
+            width: 30%;
             min-height: 40px;
             line-height: 40px;
             margin-bottom: 30px;
 
-            &:not(:last-child){
-                background: url(../img/tick.png) left top no-repeat;
-                background-size: contain;
-                
-            }
+            .text {
+                position: relative;
+                padding-left: 50px;
 
+                &:before {
+                    content: '';
+                    display: block;
+                    background: url(../img/tick.png) top left no-repeat;
+                    width: 50px;
+                    height: 50px;
+                    background-size: contain;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            
+            .custom-btn{
+                width: 100%;
+                text-align: center;
+                padding: 15px 30px;
+            }
         }
     }
 }

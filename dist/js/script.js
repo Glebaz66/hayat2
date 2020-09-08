@@ -32,7 +32,7 @@ $(document).ready(function(){
     });
 
     //custom next btn
-    $('.next-btn').click(function(){
+    $('.next').click(function(){
         $('.portfolio').slick('slickNext');
     })
     $('.arrow__left').click(function(){
@@ -100,3 +100,17 @@ $(document).ready(function(){
         }
     })
 });
+
+$('.toggler').on('click', function(e){
+    const target = e.target;
+
+    $('.menu').addClass('opening')
+    
+    setTimeout(function() { 
+        $('.menu').addClass('open')
+    }, 1000);
+
+    if(target.contains('open')){
+        $('.menu').removeClass('open')
+    }
+})
